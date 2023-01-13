@@ -1,0 +1,78 @@
+<header>
+  <img src="../assets/img/logo-limberth.ico" alt="Logo Limberth Estrada">
+  <img src="../assets/img/aplogo.png" alt="Logo Limberth Estrada">
+  <nav>
+      <ul class="lista-opciones-navegacion">
+          <li><a href="#sobre-mi">Sobre mi</a></li>
+          <li><a href="#mis-proyectos">Mis proyectos</a></li>
+          <li><a href="#contactame">Contactame</a></li>
+      </ul>
+  </nav>
+</header>
+
+<main>
+  <app-presentacion></app-presentacion>  
+  <section role="Sobre mi" id="sobre-mi" class="presentacion-larga">
+      <h1>Sobre mi</h1>
+      <div class="contenedor-presentacion-skills">
+        <app-sobre-mi class="presentacion"></app-sobre-mi>
+      <app-skills class="skills"></app-skills>
+      </div>
+  </section>
+ <app-proyectos></app-proyectos>
+  <section role="contactame" id="contactame">
+      <h1 class="p-contactame">Contactame</h1>
+      <div class="contenedor-contacto">
+          <img class="contact-icon" src="../assets/img/contachman.png" alt="imagen para que me contactes">
+          <div class="contenedor-general-contacto">
+              <div class="contenedor-minimo-contacto">
+                  <form class="formulario" action="">
+                      <div class="nombre">
+                          <label for="">
+                              <p>Nombre:</p>
+                              <input id="nombre" type="text">
+                              <p></p>
+                          </label>
+                                                  
+                      </div>
+                      <div class="apellido">
+                          <label for="">
+                              <p>Apellido:</p>
+                              <input id="apellido" type="text">
+                              <p></p>
+                          </label>
+                          
+                      </div>
+                      <div class="email-contact">
+                          <label for="">
+                              <p>E-mail:</p>
+                              <input id="email-contact" type="text">
+                              <p></p>
+                          </label>
+                          
+                      </div>
+                      <div class="telefono">
+                          <label for="">
+                              <p>telefono:</p>
+                              <input id="telefono" type="text">
+                              <p></p>
+                          </label>
+                          
+                      </div>
+                      <div class="mensaje">
+                          <label for="">
+                              <p>Mensaje:</p>
+                              <textarea class="textarea-pa" id="mensaje" name="" cols="30" rows="10"></textarea>
+                              <p></p>
+                          </label>
+                      </div>
+                      <div class="boton-enviar">
+                          <button type="submit">Enviar</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
+</main>
+<app-footer></app-footer>
